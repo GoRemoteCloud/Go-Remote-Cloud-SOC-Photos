@@ -1,15 +1,10 @@
-# Module 4 - Incident Management
+# GO Remote Cloud - Incident Management
 
-#### 🎓 Level: 300 (Intermediate)
-#### ⌛ Estimated time to complete this lab: 60 minutes
 
-This module guides you through the SOC Analyst experience using Microsoft Sentinel's incident management capabilities.
+This guide will walk throuhg a SOC Analyst experience using Microsoft Sentinel's incident management capabilities.
 
-#### Prerequisites
 
-This module assumes that you have completed [Module 1](Module-1-Setting-up-the-environment.md), as the data and the artifacts that we will be using in this module need to be deployed on your Microsoft Sentinel instance.
-
-### Exercise 1: Review Microsoft Sentinel incident tools and capabilities
+### Review Microsoft Sentinel incident tools and capabilities
 
 As a SOC analyst, the entry point to consume Security incidents (tickets) in Sentinel is the Incident page.
 
@@ -39,7 +34,7 @@ We have 2 options to open the workbook:
 
 6. Review the dashboard.
 
-### Exercise 2: Handling Incident **"Sign-ins from IPs that attempt sign-ins to disabled accounts"**
+### Handling Incident **"Sign-ins from IPs that attempt sign-ins to disabled accounts"**
 
 1. Open Azure Sentinel incident page.
 
@@ -116,7 +111,7 @@ We have 2 options to open the workbook:
 M5-close-incident
 
 
-### Exercise 3: Handling **"Solorigate Network Beacon"** incident
+### Handling **"Solorigate Network Beacon"** incident
 
 1. If not already there, navigate to *Incidents* view in Microsoft Sentinel
 
@@ -138,7 +133,7 @@ M5-close-incident
 
 ![incident2](../Images/raw-events.png)
 
-### Exercise 4: Hunting for more evidence
+### Hunting for more evidence
 
 1. As a next step, you would like to identify the hosts that might have been compromised. As part of your research, you find the following [guidance from Microsoft](https://techcommunity.microsoft.com/t5/azure-sentinel/solarwinds-post-compromise-hunting-with-azure-sentinel/ba-p/1995095). In this article, you can find a query that will do a SolarWinds inventory check query. We will use this query to find any other affected hosts.
 
@@ -172,7 +167,7 @@ M5-close-incident
 
 9. At this point you can ask the Operations team to isolate the hosts affected by this incident.
 
-### Exercise 5: Add IOC to Threat Intelligence
+### Add IOC to Threat Intelligence
 Now, we will add the IP address related to the incident to our list of IOCs, so we can capture any new occurrences of this IOC in our logs.
 
 1. Go back to *Incidents* view.
@@ -189,7 +184,7 @@ Now, we will add the IP address related to the incident to our list of IOCs, so 
 
 ![incident12](../Images/incident12.png)
 
-### Exercise 6: Handover incident
+### Handover incident
 We will now prepare the incident for handover to forensics team.
 
 1. Go to *Incidents* and select the Solorigate incident assigned to you. Click on *View full details*.
@@ -203,7 +198,3 @@ We will now prepare the incident for handover to forensics team.
 ![incident14](../Images/incident14.png)
 
 4. At this point you would hand over the incident to forensics team.
-
-
-
-**Congratulations, you have completed Module 4!**. You can now continue to **[Module 5 - Hunting](./Module-5-Hunting.md)**
